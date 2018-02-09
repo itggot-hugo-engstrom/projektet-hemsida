@@ -1,0 +1,90 @@
+body {
+    background-color: #028090;
+}
+
+.container {
+    grid-template-rows: repeat(12, 1fr);
+    grid-template-columns: 1fr;
+    grid-row-gap: 15px;
+    margin-top: 80+px;
+    display: grid;
+    height: 80vw;
+    width: 800px;
+    margin: 100px auto;
+}
+
+.menu {
+     font-size: 36px; 
+     color: white;
+     align-self: auto;
+     grid-row: span 1;
+     grid-column: span 1;
+     
+}
+
+
+.erbjudande_1 {
+    background-color: peachpuff;
+    grid-row: span 3;
+    grid-column: span 1;
+}
+
+.erbjudande_2 {
+    background-color: hotpink;
+    grid-row: span 3;
+    grid-column: span 1;
+}
+
+.header {
+    height: 50px;
+    width: 100%;
+    background-color: #05668D;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: 1fr;
+    display: grid;
+    margin: 0 auto;
+    top: 0;
+    position: fixed;
+    left: 0;
+    margin-top: -1;
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.45);
+}
+
+
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        width: 100%;
+    }
+
+    .footer {
+        height: 50px;
+    }
+
+    .header {
+       
+    }
+
+}
+
+.footer {
+    height: 80px;
+    width: 100%;
+    left: 0;
+    background-color: #05668D;
+    margin: 0 auto;
+    position: absolute;
+    -webkit-box-shadow: 0px -10px 5px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 0px -10px 5px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px -10px 5px 0px rgba(0,0,0,0.45);
+}
+
+.aside {
+    height: auto;
+    width: 600px;
+    background-color: pink;
+    margin: 0 auto;
+}
